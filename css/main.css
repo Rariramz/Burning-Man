@@ -1,0 +1,280 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 58px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 113px;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../images/header-bg.jpg") no-repeat center top / cover;
+  color: #fff;
+  padding-top: 57px;
+  padding-bottom: 322px;
+}
+
+.header a {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  margin-right: 69px;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+}
+.nav .nav__menu-mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  padding: 40px 20px 20px 40px;
+  z-index: 1;
+}
+.nav .nav__menu-mobile li {
+  margin-bottom: 20px;
+}
+
+.nav__mobile-menu-btn {
+  display: none;
+  background-color: transparent;
+  border: transparent;
+  margin-left: 20px;
+  outline: none;
+  z-index: 2;
+}
+
+.nav__menu li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+.nav__menu li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.nav__menu li {
+  margin-right: 40px;
+}
+
+.nav__tel {
+  font-size: 17px;
+  margin-left: auto;
+  letter-spacing: 0.1em;
+}
+
+.header__offer {
+  margin-top: 216px;
+}
+
+.offer {
+  text-transform: uppercase;
+}
+
+.offer p {
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+
+.offer h1 {
+  font-size: 100px;
+  margin-bottom: 19px;
+  margin-top: -9px;
+  letter-spacing: 0.02em;
+}
+
+.offer__btn {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 17px 47px;
+  border: 1px solid #fff;
+  width: 238px;
+  transition: all 0.5s ease;
+}
+.offer__btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.about__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__card p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.62em;
+}
+
+.about__card {
+  width: 567px;
+}
+
+.about__gallery ul {
+  margin-top: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__gallery img {
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.about__gallery img:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.footer__text {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  padding-top: 114px;
+}
+
+.footer__text p {
+  margin-right: 67px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .about__card {
+    width: 48%;
+  }
+  .about__gallery li:nth-child(1) {
+    width: 23%;
+  }
+  .about__gallery li:nth-child(2) {
+    width: 23%;
+  }
+  .about__gallery li:nth-child(3) {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+  .nav__menu {
+    display: none;
+  }
+  .nav__mobile-menu-btn {
+    display: inline-block;
+  }
+  .offer h1 {
+    line-height: 1em;
+    margin-top: 10px;
+  }
+  .about__cards {
+    flex-wrap: wrap;
+  }
+  .about__card {
+    width: 100%;
+  }
+  .about__card:nth-child(1) {
+    margin-bottom: 40px;
+  }
+  .about__gallery ul {
+    flex-wrap: wrap;
+  }
+  .about__gallery li:nth-child(1),
+  .about__gallery li:nth-child(2),
+  .about__gallery li:nth-child(3) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__text {
+    flex-wrap: wrap;
+  }
+  .footer__text p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+}

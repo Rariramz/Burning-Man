@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="burning man, festaval, black rock city, nevada">
+    <meta name="description" content="Information about the Burning Man festival, ticket reservations">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Burning Man</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <img class="nav__logo" src="./images/logo.svg" alt="Burning Man">
+                <ul id="menu" class="nav__menu">
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">TICKETS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACTS</a>
+                    </li>
+                </ul>
+                <a href="tel:+18938392364" class="nav__tel">+1 893 839-23-64</a>
+                <button id="menuButton" class="nav__mobile-menu-btn">
+                    <img src="./images/menu.png" alt="menu" width="40px">
+                </button>
+            </nav>
+            <div class="header__offer offer">
+                <p>NOT THE EVENT. THE LIFE</p>
+                <h1>BURNING MAN</h1>
+                <a href="#" class="offer__btn">BOOK THE TICKETS</a>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <div class="container">
+            <section class="about">
+                <h2>ABOUT THE EVENT</h2>
+                <div class="about__cards">
+                    <div class="about__card">
+                        <h3>REBUILDING THE SOCIETY</h3>
+                        <p>
+                            Burning Man is a network of people inspired by the values reflected in the 
+                            Ten Principles and united in the pursuit of a more creative and connected 
+                            existence in the world. Throughout the year we work to build Black Rock 
+                            City, home of the largest annual Burning Man gathering, and nurture the 
+                            distinctive culture emerging from that experience. 
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <h3>THIS DRIVES US</h3>
+                        <p>
+                            Burning Man Project will bring experiences to people in grand, 
+                            awe-inspiring and joyful ways that lift the human spirit, address social 
+                            problems, and inspire a sense of culture, community, and civic 
+                            engagement. Burning Man provides infrastructural tools and frameworks 
+                            to support local communities in applying the Ten Principles through six 
+                            interconnected program areas, including Arts, Civic Involvement, Culture, 
+                            Education, Philosophical Center, and Social Enterprise.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__gallery">
+                    <ul>
+                        <li>
+                            <img src="./images/img1.jpg" alt="Event photo 1">
+                        </li>
+                        <li>
+                            <img src="./images/img2.jpg" alt="Event photo 2">
+                        </li>
+                        <li>
+                            <img src="./images/img3.jpg" alt="Event photo 3">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="container footer__text">
+            <p>Rariramz :)</p>
+            <p>Figma-design by Андрей Гаврилов & WAYUP</p>
+        </div>
+    </footer>
+
+    <script>
+        menuButton.addEventListener('click', () => menu.classList.toggle('nav__menu-mobile'))
+    </script>
+</body>
+</html>
